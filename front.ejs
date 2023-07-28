@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB</title>
+</head>
+<body>
+    <% if(student.length>0){ %>
+    <% for(var i=0;i<student.length;i++){ %>
+        <h3>First Name- <%- student[i].fname%></h3>
+        <h3>Last Name- <%- student[i].lname%></h3>
+        <h3>Father's Name- <%- student[i].Father%></h3>
+        <h3>Mother's Name- <%- student[i].Mother%></h3>
+        <h3>Student Ph.No- <%- student[i].Sphone%></h3>
+        <h3>Father Ph.No- <%- student[i].Fphone%></h3>
+        <h3>Student Mail- <%- student[i].Semail%></h3>
+        <h3>Degree- <%- student[i].Degree%></h3>
+        <h3>Course- <%- student[i].Course%></h3>
+        <h3>Current Semester- <%- student[i].Semester%></h3>
+        <hr>
+        <% }%>
+        <% }else{%>
+            <h3>student <details> not found </details></h3>
+        <% } %>
+</body>
+</html>

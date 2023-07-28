@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .form {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Student Registration Portal</h1>
+        <form action="/" method="post">
+            <label>First Name: *</label>
+            <input required type="text" name="fname" placeholder="First Name">
+            <br>
+            <label>Last Name: *</label>
+            <input required type="text" name="lname" placeholder="Last Name">
+            <br>
+            <label>Father's Name:</label>
+            <input required type="text" name="Father" placeholder="Father's Name">
+            <br>
+            <label>Mother's Name:</label>
+            <input required type="text" name="Mother" placeholder="Mother's Name">
+            <br>
+            <label>Student Ph.No:</label>
+            <input required type="number" name="Sphone" placeholder="Student Phone">
+            <br>
+            <label>Father Ph.No:</label>
+            <input required type="number" name="Fphone" placeholder="Father Phone">
+            <br>
+            <label>Student Mail:</label>
+            <input required type="email" name="Semail" placeholder="Student Email">
+            <br>
+            <label>Degree:</label>
+            <input required type="text" name="Degree" placeholder="Degree">
+            <br>
+            <label>Course:</label>
+            <input required type="text" name="Course" placeholder="Course">
+            <br>
+            <label>Current Semester:</label>
+            <input required type="number" name="Semester" placeholder="Year">
+            <br>
+            <label>Gender: *</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="Other">Other
+            <br>
+            <br>
+            <input type="submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>
